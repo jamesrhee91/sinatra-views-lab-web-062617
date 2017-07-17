@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<h1>Today</h1>
+<%t = Time.now%>
+<%f = ["%A", "%B", "%d", "%Y"]%>
+<%f.map! {|e| t.strftime(e)}%>
+<p><%="The date is #{f[0]}, #{f[1]} #{f[2]}, #{f[3]}"%></p>
+</html>
